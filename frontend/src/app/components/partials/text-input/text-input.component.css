@@ -1,0 +1,37 @@
+input {
+  width: 70%;
+  height: 80%;
+  border: 0 solid var(--brighterColor);
+  transition: border 0.15s ease-out;
+  background-color: var(--links);
+  font-size: 1.1rem;
+  outline: none;
+  color: var(--shadowSaturated);
+}
+
+input::placeholder {
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+input:focus {
+  border-width: 2.9px;
+  background-color: var(--tertiary);
+}
+
+inputValidation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  height: 100%;
+  width: 12rem;
+}
+
+@media screen and (max-width: 550px) {
+  input {
+    width: 100%;
+  }
+}

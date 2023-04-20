@@ -1,0 +1,26 @@
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  top: 10rem;
+  left: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+  align-items: center;
+}
+
+svg {
+  height: 200px;
+  width: 200px;
+  fill: var(--brighterColor);
+}
+
+@media screen and (max-width: 520px) {
+}

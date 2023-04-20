@@ -1,0 +1,91 @@
+table {
+  width: 100%;
+  border: 1px solid var(--brighterColor);
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--shadowSaturated);
+}
+
+h3 {
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
+  color: var(--brighterColor);
+  font-family: "Dancing Script", cursive;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+td {
+  height: 3rem;
+  padding-left: 0.5rem;
+  font-family: "EB Garamond", serif;
+  color: var(--links);
+  font-size: 1.2rem;
+}
+
+img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 100rem;
+}
+
+.total,
+.last1 {
+  padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  table {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  tr {
+    width: 100%;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  td {
+    height: 3rem;
+    padding-left: 0.5rem;
+
+    font-size: 1.1rem;
+    border-right: 1px solid var(--brighterColor);
+    border-bottom: 1px solid var(--brighterColor);
+  }
+
+  .title {
+    border-right: none;
+    border-bottom: none;
+  }
+  .name {
+    width: 58%;
+  }
+  .quantity {
+    width: 2%;
+  }
+  .img {
+    width: 10%;
+  }
+  .price {
+    width: 15%;
+  }
+  .total {
+    width: 15%;
+    border-right: none;
+  }
+  .last {
+    border-bottom: none;
+  }
+  .last1 {
+    border-right: none;
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,22 @@
+h1 {
+  color: var(--links);
+  font-family: "Dancing Script", cursive;
+  font-weight: 800;
+  background-color: var(--shadowSaturated);
+
+  padding: 1rem;
+  border-radius: 10rem;
+  font-size: 2rem;
+  margin: 1.5rem 0 1.5rem 0;
+  margin: auto;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+}

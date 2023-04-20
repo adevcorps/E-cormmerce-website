@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+html,
+button {
+  font-family: "EB Garamond", serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+body.lightTheme {
+  --primary: #fce5fc;
+  --secondary: #ffcdfd;
+  --links: rgb(36, 6, 36);
+  --text: rgb(0, 0, 0);
+  --shadow: #0a080a;
+  --shadowSaturated: rgb(255, 205, 253);
+  --shadowSaturatedTransparent: rgb(255, 205, 253, 0.8);
+  --tertiary: #4d0d4d;
+  --strong: #ebc7eb;
+  --brighterColor: rgb(36, 6, 36);
+  --dimmerBrighterColor: rgb(36, 6, 36, 0.8);
+  --lingerieTabs: rgb(250, 84, 244);
+}
+
+.dark-theme {
+  --primary: #6e5d6e;
+  --secondary: #1f1a1f;
+  --links: rgb(255, 205, 253);
+  --text: white;
+  --shadow: #0a080a;
+  --shadowSaturated: rgb(36, 6, 36);
+  --lingerieTabs: rgb(36, 6, 36);
+  --shadowSaturatedTransparent: rgb(36, 6, 36, 0.8);
+  --tertiary: #ebc7eb;
+  --strong: #4d0d4d;
+  --brighterColor: rgb(250, 84, 244);
+  --dimmerBrighterColor: rgb(255, 204, 253, 0.8);
+}
+
+:root {
+  --primary: #6e5d6e;
+  --secondary: #1f1a1f;
+  --links: rgb(255, 205, 253);
+  --text: white;
+  --shadow: #0a080a;
+  --shadowSaturated: rgb(36, 6, 36);
+  --lingerieTabs: rgb(36, 6, 36);
+  --shadowSaturatedTransparent: rgb(36, 6, 36, 0.8);
+  --tertiary: #ebc7eb;
+  --strong: #4d0d4d;
+  --brighterColor: rgb(250, 84, 244);
+  --dimmerBrighterColor: rgb(255, 204, 253, 0.8);
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.2rem;
+  border: 1px solid var(--brighterColor);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4rem;
+  background: var(--strong);
+}

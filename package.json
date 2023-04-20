@@ -1,0 +1,20 @@
+{
+  "name": "freakylinkweb",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "description": "",
+  "scripts": {
+    "start": "cd backend/built && node server.js",
+    "prebuild": "cd backend && npm run build",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "prettier": "2.8.8"
+  }
+}

@@ -1,0 +1,106 @@
+.container {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "EB Garamond", serif;
+  width: 100vw;
+}
+
+.content {
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.summary > div {
+  display: flex;
+  margin-top: 0.7rem;
+  align-items: flex-end;
+  color: var(--links);
+  border-bottom: 1px solid var(--brighterColor);
+}
+
+.summary span {
+  font-size: 1.2rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.summary h3 {
+  margin: 0 1rem 0 0;
+  font-size: 1.5rem;
+}
+
+app-title {
+  width: 100%;
+  margin: 1rem 0 1rem 0.2rem;
+}
+
+.map {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+map {
+  width: 100%;
+  height: 100%;
+}
+
+.buttonsContainer {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 2rem;
+  width: 80%;
+}
+
+.summary {
+  background-color: var(--shadowSaturated);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+button {
+  color: var(--brighterColor);
+  background-color: var(--shadowSaturated);
+  width: 100%;
+  height: 3rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 2px 2px var(--strong);
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    margin-top: 0;
+  }
+  .content {
+    gap: 1rem;
+  }
+  app-title {
+    margin: 0;
+  }
+  .summary h3 {
+    font-size: 1.4rem;
+  }
+  .map {
+    gap: 1rem;
+  }
+  .summary span {
+    font-size: 1.1rem;
+  }
+}

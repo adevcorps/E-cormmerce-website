@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 3rem;
+  font-family: "EB Garamond", serif;
+}
+
+.details {
+  width: 28rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--brighterColor);
+}
+
+.register a {
+  color: var(--links);
+  opacity: 1;
+}
+
+.register a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    margin-top: 0;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+}

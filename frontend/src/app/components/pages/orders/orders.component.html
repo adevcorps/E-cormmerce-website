@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="content">
+    <app-title width="60%" title="Orders" fontSize="1.6rem"></app-title>
+    <p class="mobile">Swipe to see full table ➡️</p>
+    <div class="summary">
+      <table *ngIf="orders">
+        <thead class="main">
+          <tr>
+            <th class="paymentId">Payment ID</th>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <ng-container *ngFor="let order of orders">
+            <tr *ngFor="let item of order.items; let firstItem = first">
+              <td
+                class="paymentId"
+                *ngIf="firstItem"
+                [attr.rowspan]="order.items.length"
+              >
+                {{ order.paymentId }}
+              </td>
+              <td *ngIf="firstItem" [attr.rowspan]="order.items.length">
+                {{ order.createdAt | date : "yyyy-MM-dd" }}
+              </td>
+              <td>{{ item.lingerie.name }}</td>
+              <td>{{ item.price }}</td>
+              <td>{{ item.quantity }}</td>
+              <td *ngIf="firstItem" [attr.rowspan]="order.items.length">
+                {{ order.totalPrice }}
+              </td>
+              <td
+                class="last"
+                *ngIf="firstItem"
+                [attr.rowspan]="order.items.length"
+              >
+                {{ order.status }}
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+      <p *ngIf="orders && orders.length === 0">No orders available.</p>
+      <p *ngIf="!orders">Loading orders...</p>
+    </div>
+  </div>
+</div>

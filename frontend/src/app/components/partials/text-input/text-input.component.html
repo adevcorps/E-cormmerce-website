@@ -1,0 +1,13 @@
+<input-container [label]="label">
+  <input
+    [type]="type"
+    [placeholder]="label"
+    [formControl]="formControl"
+    [value]="formControl.value ?? ''"
+    (input)="onInput($event)"
+  />
+  <input-validation
+    [control]="control"
+    [showErrorsWhen]="showErrorsWhen"
+  ></input-validation>
+</input-container>

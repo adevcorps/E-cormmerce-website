@@ -1,0 +1,86 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+ngb-rating {
+  font-size: 1rem;
+  color: var(--links);
+  margin-bottom: 0.2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+li a {
+  width: 20rem;
+  border: 1px solid var(--strong);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--links);
+  text-decoration: none;
+  background-color: var(--shadowSaturated);
+  box-shadow: 10px 8px 16px var(--shadowSaturated);
+}
+
+div.name {
+  text-decoration: none;
+  color: var(--links);
+  width: 90%;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+}
+
+li a:visited .name {
+  color: var(--dimmerBrighterColor);
+}
+
+li a:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+li a img {
+  object-fit: cover;
+  height: 18rem;
+  align-self: center;
+  justify-self: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.content {
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  height: 9rem;
+}
+
+.favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+.favorite.not {
+  color: var(--primary);
+}
+
+.price {
+  position: absolute;
+  left: 0.9rem;
+  margin-bottom: 0;
+  align-self: baseline;
+  justify-self: flex-end;
+
+  font-family: "EB Garamond", serif;
+}
